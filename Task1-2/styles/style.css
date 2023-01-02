@@ -1,0 +1,45 @@
+body{
+font-family: Verdana, serif;
+background-image: url(../img/fon.jpg);
+}
+div.header{
+border:1px solid;
+font-style:arial;
+font-size:25px;
+background-color:white; display:flex;justify-content:space-around;
+}
+.author img{
+margin-top: 60%;
+width:50px;
+height:50px;
+}
+.contents{
+display:flex;width:70%;flex-direction: column; border:1px solid;margin-top:10px;float:left;
+}
+.content-1{
+height:220px;background-color:white;
+}
+.content-2{
+height:460px;
+background-color:white;margin-top:10px;
+}
+.content-text img{
+width:200px;
+}
+div.content-reation{
+position:relative;
+}
+img.incontent{
+width:25px;
+height:25px;
+}
+.author{
+width:80px;
+float:left;
+height:100%;
+text-align:center;
+}
+div.content-ad{margin-top:10px;display:flex; justify-content:space-around;
+}
+.first-ad{
+height:400px;}
