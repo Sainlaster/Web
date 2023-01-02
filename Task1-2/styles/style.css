@@ -6,16 +6,17 @@ div.header{
 border:1px solid;
 font-style:arial;
 font-size:25px;
-background-color:white; display:flex;justify-content:space-around;
+background-color:white;display:flex; justify-content:space-around;
+}
+.contents{
+display:flex;width:70%;flex-direction: column; border:1px solid;margin-top:10px;float:left;
 }
 .author img{
 margin-top: 60%;
 width:50px;
 height:50px;
 }
-.contents{
-display:flex;width:70%;flex-direction: column; border:1px solid;margin-top:10px;float:left;
-}
+
 .content-1{
 height:220px;background-color:white;
 }
@@ -39,7 +40,63 @@ float:left;
 height:100%;
 text-align:center;
 }
-div.content-ad{margin-top:10px;display:flex; justify-content:space-around;
+div.content-ad
+{margin-top:10px;
+display:flex; 
+justify-content:space-around;flex-direction: column; align-items: center;
 }
 .first-ad{
-height:400px;}
+height:400px;
+}
+@media(max-width:1250px){
+.contents{
+display:flex;width:100%;flex-direction: column; border:1px solid;margin-top:10px;float:none;
+ }
+div.content-ad
+{
+flex-direction: row;
+}
+}
+@media (max-width: 660px) {
+.content-1{
+height:260px;
+}
+.content-2{
+height:500px;
+}
+div.header{
+flex-direction: column;justify-content:space-around; align-items: center;
+}
+}
+@media (max-width: 660px) {
+.content-1{
+height:260px;
+}
+.content-2{
+height:500px;
+}
+div.content-ad
+{margin-top:10px;
+display:flex; 
+justify-content:space-around;flex-direction: column; align-items: center;
+ }
+}
+@media (max-width: 400px) {
+.content-1{
+height:300px;
+}
+.content-2{
+height:550px;
+}
+}
+@media (max-width: 315px) {
+.content-1{
+height:350px;
+}
+.content-2{
+height:550px;
+}
+.content-text img{
+width:100px;
+}
+}
